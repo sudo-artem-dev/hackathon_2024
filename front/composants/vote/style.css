@@ -1,0 +1,147 @@
+.vote {
+  display: flex;
+  justify-content: center;
+  
+  min-height: 100vh;
+  margin: 0;
+    background-image: url("../../public/img/fond_noel.webp");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+header {
+    background-image: url("../../public/img/header_banner.jpg");
+    font-size: 1rem;
+    height:100px;
+    color: white;
+    text-align:center;
+    padding: 10px 0 0 300px;
+    border-bottom: 5px solid #007f5f;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  width: 50%;
+}
+
+.container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffb703;
+  text-shadow: 2px 2px #fb8500;
+}
+
+.container ul {
+  display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  list-style-type: none;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+h1{
+  color: #FFF;
+  background-color: #CC231E;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+li {
+    text-align:justify;
+    font-size: 1.5em;
+    margin: 5px;
+    background-color: #fb860044;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  align-self: center;
+  margin-top: 20px;
+  background: #CC231E;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background: #F5624D;
+}
+
+.snowflake {
+  position: fixed;
+  top: -10%;
+  color: white;
+  font-size: 1rem;
+  pointer-events: none;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+      transform: translateY(-10%) rotate(0deg);
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(110vh) rotate(360deg);
+      opacity: 0.5;
+  }
+}
+
+@keyframes sway {
+  0%, 100% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(10px);
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+/* Boutons stylés */
+.btn {
+  background: #397218;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #21d121;
+}

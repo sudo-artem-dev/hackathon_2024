@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #CC231E,#F5624D, #ffffff);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+    margin-top: 10%;
+    width: 90%;
+    max-width: 500px; 
+}
+
+.container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px #0F8A5F;
+}
+
+.container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.container button {
+    background: #34A65F;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 2%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container button:hover {
+    background: #0F8A5F;
+}
+
+.snowflake {
+    position: fixed;
+    top: -10%;
+    color: white;
+    font-size: 1rem;
+    pointer-events: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10%) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0.5;
+    }
+}
+
+@keyframes sway {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+}
+.container p  {
+    color: #000000;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container a  {
+    color: #000000;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.countdown {
+    position: absolute; 
+    top: 20px; 
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+}
+
+.countdown div {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.countdown span {
+    display: block;
+    font-size: 1.5em;
+    font-family: 'frosty';
+}
+
+@font-face {
+    font-family: 'MerryChristmasFlake';
+    src: url('../../public/fonts/MerryChristmasFlake.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'frosty';
+    src: url('../../public/fonts/FROSTY__.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title {
+    font-family: 'MerryChristmasFlake', sans-serif; 
+    font-size: 80px; 
+    color: #ffffff; 
+}
+
+.countdown p {
+    font-family: 'MerryChristmasFlake';
+}
+
+/* Pour les écrans plus petits, comme les tablettes et les téléphones */
+@media (max-width: 768px) {
+    .container {
+        width: 85%;
+        margin-top: 5%;
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .title {
+        font-size: 50px; 
+    }
+
+    .countdown {
+        font-size: 1.5em; 
+    }
+
+    .countdown span {
+        font-size: 1.2em;
+    }
+
+    .container input, .container button {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}
+
+/* Pour les écrans très petits, comme les téléphones */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        margin-top: 5%;
+    }
+
+    .container h1 {
+        font-size: 1.5rem;
+    }
+
+    .title {
+        font-size: 40px; 
+    }
+
+    .countdown {
+        font-size: 1.2em;
+    }
+
+    .countdown span {
+        font-size: 1em;
+    }
+
+    .container input, .container button {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}
